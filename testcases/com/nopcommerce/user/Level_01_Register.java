@@ -28,6 +28,7 @@ public class Level_01_Register {
 
 //	@Test
 	public void Register_01_Empty_Data() {
+
 		driver.get("https://demo.nopcommerce.com/");
 
 		driver.findElement(By.xpath("//a[@class='ico-register']")).click();
