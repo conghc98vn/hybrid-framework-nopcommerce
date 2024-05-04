@@ -150,7 +150,9 @@ public class BasePage {
 		clickToElement(driver, xpathParent);
 		sleepInSecond(1);
 
-		List<WebElement> allItems = new WebDriverWait(driver, Duration.ofSeconds(30)).until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(xpathChild)));
+		List<WebElement> allItems;
+
+		allItems = new WebDriverWait(driver, Duration.ofSeconds(30)).until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByXpath(xpathChild)));
 
 		for (WebElement tempElement : allItems) {
 			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", tempElement);
