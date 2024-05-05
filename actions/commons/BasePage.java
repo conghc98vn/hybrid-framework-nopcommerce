@@ -135,7 +135,7 @@ public class BasePage {
 		} else if (locatorValue.startsWith("tagname=") || locatorValue.startsWith("Tagname=") || locatorValue.startsWith("TAGNAME=")) {
 			by = By.cssSelector(locatorValue.substring(4));
 		} else {
-			throw new RuntimeException("Locator type is not valid");
+			throw new RuntimeException("Locator type is not valid ! Recheck Locator");
 		}
 
 		return by;
