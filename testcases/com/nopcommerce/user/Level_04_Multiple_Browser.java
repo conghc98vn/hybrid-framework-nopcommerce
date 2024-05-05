@@ -12,10 +12,10 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.CustomerPageObject;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.users.CustomerPageObject;
+import pageObjects.users.HomePageObject;
+import pageObjects.users.LoginPageObject;
+import pageObjects.users.RegisterPageObject;
 
 public class Level_04_Multiple_Browser extends BaseTest {
 
@@ -29,10 +29,10 @@ public class Level_04_Multiple_Browser extends BaseTest {
 	CustomerPageObject customerPage;
 	RegisterPageObject registerPage;
 
-	@Parameters("browser")
+	@Parameters({ "browser", "url" })
 	@BeforeClass
-	public void beforeClass(String browserName) {
-		driver = getBrowserDriver(browserName);
+	public void beforeClass(String browserName, String urlValue) {
+		driver = getBrowserDriver(browserName, urlValue);
 	}
 
 	@Test
@@ -143,9 +143,7 @@ public class Level_04_Multiple_Browser extends BaseTest {
 
 		homePage.clickToLogoutLink();
 
-		homePage.clickToLoginLink();
-
-		loginPage = new LoginPageObject(driver);
+		loginPage = homePage.clickToLoginLink();
 
 		loginPage.enterToEmailTextbox(email);
 		loginPage.enterToPasswordTextbox("123123");

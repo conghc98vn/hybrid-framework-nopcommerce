@@ -31,7 +31,7 @@ public class Level_02_Apply_BasePage_01_Initial {
 
 	@Test
 	public void Register_01_Empty_Data() {
-		basePage.openUrl(driver, "https://demo.nopcommerce.com/");
+		basePage.openPageUrl(driver, "https://demo.nopcommerce.com/");
 
 		basePage.clickToElement(driver, "//a[@class='ico-register']");
 
@@ -45,7 +45,7 @@ public class Level_02_Apply_BasePage_01_Initial {
 
 	@Test
 	public void Register_02_Invalid_Email() {
-		basePage.openUrl(driver, "https://demo.nopcommerce.com/");
+		basePage.openPageUrl(driver, "https://demo.nopcommerce.com/");
 
 		basePage.clickToElement(driver, "//a[@class='ico-register']");
 
@@ -63,7 +63,7 @@ public class Level_02_Apply_BasePage_01_Initial {
 
 	@Test
 	public void Register_03_Invalid_Password() {
-		basePage.openUrl(driver, "https://demo.nopcommerce.com/");
+		basePage.openPageUrl(driver, "https://demo.nopcommerce.com/");
 
 		basePage.clickToElement(driver, "//a[@class='ico-register']");
 
@@ -81,7 +81,7 @@ public class Level_02_Apply_BasePage_01_Initial {
 	@Test
 	public void Register_04_Incorrect_Confirm_Password() {
 
-		basePage.openUrl(driver, "https://demo.nopcommerce.com/");
+		basePage.openPageUrl(driver, "https://demo.nopcommerce.com/");
 
 		basePage.clickToElement(driver, "//a[@class='ico-register']");
 
@@ -99,7 +99,7 @@ public class Level_02_Apply_BasePage_01_Initial {
 	@Test
 	public void Register_05_Success() {
 
-		basePage.openUrl(driver, "https://demo.nopcommerce.com/");
+		basePage.openPageUrl(driver, "https://demo.nopcommerce.com/");
 
 		basePage.clickToElement(driver, "//a[@class='ico-register']");
 

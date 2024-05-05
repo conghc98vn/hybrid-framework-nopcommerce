@@ -3,22 +3,21 @@ package com.nopcommerce.user;
 import static org.testng.Assert.assertEquals;
 
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import commons.BasePage;
+import commons.BaseTest;
 import pageObjects.users.CustomerPageObject;
 import pageObjects.users.HomePageObject;
 import pageObjects.users.LoginPageObject;
 import pageObjects.users.RegisterPageObject;
 
-public class Level_03_Page_Object_Pattern extends BasePage {
+public class Level_07_Page_Generator_01 extends BaseTest {
 
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
@@ -30,14 +29,10 @@ public class Level_03_Page_Object_Pattern extends BasePage {
 	CustomerPageObject customerPage;
 	RegisterPageObject registerPage;
 
+	@Parameters("browser")
 	@BeforeClass
-	public void beforeClass() {
-		System.setProperty("webdriver.chrome.driver", projectPath + "/browserDrivers/chromedriver");
-		driver = new ChromeDriver();
-
-		driver.get("https://demo.nopcommerce.com/");
-
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	public void beforeClass(String browserName) {
+		driver = getBrowserDriver(browserName);
 	}
 
 	@Test
@@ -142,8 +137,6 @@ public class Level_03_Page_Object_Pattern extends BasePage {
 
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
 
-		Assert.assertEquals(getElementText(driver, "//div[@class='result']"), "Your registration completed");
-
 		registerPage.clickToHomePageLogo();
 
 		homePage = new HomePageObject(driver);
@@ -170,7 +163,7 @@ public class Level_03_Page_Object_Pattern extends BasePage {
 
 	@AfterClass
 	public void afterClass() {
-		driver.quit();
+		quitBrowserDriver();
 	}
 
 }

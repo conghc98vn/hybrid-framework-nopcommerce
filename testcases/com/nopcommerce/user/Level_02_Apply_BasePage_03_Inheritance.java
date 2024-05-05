@@ -29,7 +29,7 @@ public class Level_02_Apply_BasePage_03_Inheritance extends BasePage {
 
 	@Test
 	public void Register_01_Empty_Data() {
-		openUrl(driver, "https://demo.nopcommerce.com/");
+		openPageUrl(driver, "https://demo.nopcommerce.com/");
 
 		clickToElement(driver, "//a[@class='ico-register']");
 
@@ -43,7 +43,7 @@ public class Level_02_Apply_BasePage_03_Inheritance extends BasePage {
 
 	@Test
 	public void Register_02_Invalid_Email() {
-		openUrl(driver, "https://demo.nopcommerce.com/");
+		openPageUrl(driver, "https://demo.nopcommerce.com/");
 
 		clickToElement(driver, "//a[@class='ico-register']");
 
@@ -61,7 +61,7 @@ public class Level_02_Apply_BasePage_03_Inheritance extends BasePage {
 
 	@Test
 	public void Register_03_Invalid_Password() {
-		openUrl(driver, "https://demo.nopcommerce.com/");
+		openPageUrl(driver, "https://demo.nopcommerce.com/");
 
 		clickToElement(driver, "//a[@class='ico-register']");
 
@@ -79,7 +79,7 @@ public class Level_02_Apply_BasePage_03_Inheritance extends BasePage {
 	@Test
 	public void Register_04_Incorrect_Confirm_Password() {
 
-		openUrl(driver, "https://demo.nopcommerce.com/");
+		openPageUrl(driver, "https://demo.nopcommerce.com/");
 
 		clickToElement(driver, "//a[@class='ico-register']");
 
@@ -97,7 +97,7 @@ public class Level_02_Apply_BasePage_03_Inheritance extends BasePage {
 	@Test
 	public void Register_05_Success() {
 
-		openUrl(driver, "https://demo.nopcommerce.com/");
+		openPageUrl(driver, "https://demo.nopcommerce.com/");
 
 		clickToElement(driver, "//a[@class='ico-register']");
 

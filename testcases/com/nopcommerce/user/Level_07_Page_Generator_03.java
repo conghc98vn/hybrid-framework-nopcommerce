@@ -3,22 +3,22 @@ package com.nopcommerce.user;
 import static org.testng.Assert.assertEquals;
 
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import commons.BasePage;
+import commons.BaseTest;
+import commons.PageGeneratorManager;
 import pageObjects.users.CustomerPageObject;
 import pageObjects.users.HomePageObject;
 import pageObjects.users.LoginPageObject;
 import pageObjects.users.RegisterPageObject;
 
-public class Level_03_Page_Object_Pattern extends BasePage {
+public class Level_07_Page_Generator_03 extends BaseTest {
 
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
@@ -30,24 +30,19 @@ public class Level_03_Page_Object_Pattern extends BasePage {
 	CustomerPageObject customerPage;
 	RegisterPageObject registerPage;
 
+	@Parameters("browser")
 	@BeforeClass
-	public void beforeClass() {
-		System.setProperty("webdriver.chrome.driver", projectPath + "/browserDrivers/chromedriver");
-		driver = new ChromeDriver();
+	public void beforeClass(String browserName) {
 
-		driver.get("https://demo.nopcommerce.com/");
+		driver = getBrowserDriver(browserName);
 
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		homePage = PageGeneratorManager.getHomePage(driver);
 	}
 
 	@Test
 	public void Register_01_Empty_Data() {
 
-		homePage = new HomePageObject(driver);
-
-		homePage.clickToRegisterLink();
-
-		registerPage = new RegisterPageObject(driver);
+		registerPage = homePage.clickToRegisterLink();
 
 		registerPage.clickToRegisterButton();
 
@@ -62,11 +57,7 @@ public class Level_03_Page_Object_Pattern extends BasePage {
 	public void Register_02_Invalid_Email() {
 		registerPage.clickToHomePageLogo();
 
-		homePage = new HomePageObject(driver);
-
-		homePage.clickToRegisterLink();
-
-		registerPage = new RegisterPageObject(driver);
+		registerPage = homePage.clickToRegisterLink();
 
 		registerPage.enterToFirstNameTextox("John");
 		registerPage.enterToLastNameTextbox("Wick");
@@ -81,13 +72,9 @@ public class Level_03_Page_Object_Pattern extends BasePage {
 
 	@Test
 	public void Register_03_Invalid_Password() {
-		registerPage.clickToHomePageLogo();
+		homePage = registerPage.clickToHomePageLogo();
 
-		homePage = new HomePageObject(driver);
-
-		homePage.clickToRegisterLink();
-
-		registerPage = new RegisterPageObject(driver);
+		registerPage = homePage.clickToRegisterLink();
 
 		registerPage.enterToFirstNameTextox("John");
 		registerPage.enterToLastNameTextbox("Wick");
@@ -103,13 +90,9 @@ public class Level_03_Page_Object_Pattern extends BasePage {
 	@Test
 	public void Register_04_Incorrect_Confirm_Password() {
 
-		registerPage.clickToHomePageLogo();
+		homePage = registerPage.clickToHomePageLogo();
 
-		homePage = new HomePageObject(driver);
-
-		homePage.clickToRegisterLink();
-
-		registerPage = new RegisterPageObject(driver);
+		registerPage = homePage.clickToRegisterLink();
 
 		registerPage.enterToFirstNameTextox("John");
 		registerPage.enterToLastNameTextbox("Wick");
@@ -124,13 +107,9 @@ public class Level_03_Page_Object_Pattern extends BasePage {
 
 	@Test
 	public void Register_05_Success() {
-		registerPage.clickToHomePageLogo();
+		homePage = registerPage.clickToHomePageLogo();
 
-		homePage = new HomePageObject(driver);
-
-		homePage.clickToRegisterLink();
-
-		registerPage = new RegisterPageObject(driver);
+		registerPage = homePage.clickToRegisterLink();
 
 		registerPage.enterToFirstNameTextox("John");
 		registerPage.enterToLastNameTextbox("Wick");
@@ -142,26 +121,17 @@ public class Level_03_Page_Object_Pattern extends BasePage {
 
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
 
-		Assert.assertEquals(getElementText(driver, "//div[@class='result']"), "Your registration completed");
-
-		registerPage.clickToHomePageLogo();
-
-		homePage = new HomePageObject(driver);
+		homePage = registerPage.clickToHomePageLogo();
 
 		homePage.clickToLogoutLink();
 
-		homePage.clickToLoginLink();
-
-		loginPage = new LoginPageObject(driver);
+		loginPage = homePage.clickToLoginLink();
 
 		loginPage.enterToEmailTextbox(email);
 		loginPage.enterToPasswordTextbox("123123");
-		loginPage.clickToLoginButton();
+		homePage = loginPage.clickToLoginButton();
 
-		homePage = new HomePageObject(driver);
-
-		homePage.clickToMyAccountLink();
-		customerPage = new CustomerPageObject(driver);
+		customerPage = homePage.clickToMyAccountLink();
 
 		assertEquals(customerPage.getFirstNameAttributeValue(), "John");
 		assertEquals(customerPage.getLastNameAttributeValue(), "Wick");
@@ -170,7 +140,7 @@ public class Level_03_Page_Object_Pattern extends BasePage {
 
 	@AfterClass
 	public void afterClass() {
-		driver.quit();
+		quitBrowserDriver();
 	}
 
 }

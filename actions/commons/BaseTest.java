@@ -30,9 +30,33 @@ public class BaseTest {
 			throw new RuntimeException("Browser name is not valid");
 		}
 
-		driver.get("https://demo.nopcommerce.com/");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalContants.LONG_TIMEOUT));
+		return driver;
+	}
+
+	protected WebDriver getBrowserDriver(String browserName, String urlValue) {
+		BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
+
+		switch (browserList) {
+		case CHROME:
+			driver = new ChromeDriver();
+			break;
+
+		case FIREFOX:
+			driver = new FirefoxDriver();
+			break;
+
+		case EDGE:
+			driver = new EdgeDriver();
+
+		default:
+			throw new RuntimeException("Browser name is not valid");
+		}
+
+		driver.get(urlValue);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalContants.LONG_TIMEOUT));
 		return driver;
 	}
 
@@ -42,7 +66,9 @@ public class BaseTest {
 	}
 
 	protected void quitBrowserDriver() {
-		if (driver != null) {
+		if (driver == null) {
+			System.out.println("Browser is closed.");
+		} else {
 			driver.quit();
 		}
 	}
