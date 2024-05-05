@@ -141,7 +141,7 @@ public class Level_04_Multiple_Browser extends BaseTest {
 
 		homePage = new HomePageObject(driver);
 
-		homePage.clickToLogoutLink();
+//		homePage.clickToLogoutLink();
 
 		loginPage = homePage.clickToLoginLink();
 

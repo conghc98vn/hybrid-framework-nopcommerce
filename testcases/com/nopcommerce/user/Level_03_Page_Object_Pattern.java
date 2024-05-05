@@ -148,7 +148,7 @@ public class Level_03_Page_Object_Pattern extends BasePage {
 
 		homePage = new HomePageObject(driver);
 
-		homePage.clickToLogoutLink();
+//		homePage.clickToLogoutLink();
 
 		homePage.clickToLoginLink();
 
