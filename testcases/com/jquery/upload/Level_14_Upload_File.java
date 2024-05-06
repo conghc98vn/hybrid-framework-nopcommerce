@@ -62,16 +62,34 @@ public class Level_14_Upload_File extends BaseTest {
 		uploadPage.refreshCurrentPage(driver);
 		uploadPage.uploadMultipleFiles(driver, fileNames);
 	}
-	
+
 	@Test
 	public void TC_03_Go_File_IO() {
-		uploadPage.openPageUrl(driver, "https://gofile.io/welcome");
-		
+		uploadPage.openPageUrl(driver, "https://gofile.io/uploadFiles");
+
+		Assert.assertTrue(uploadPage.isLoadingIconAtMainContentDisapear());
+
 		uploadPage.uploadMultipleFiles(driver, fileNames);
-		
-		
+
+		Assert.assertTrue(uploadPage.isLoadingIconAtMainUploadDisapear());
+
+		Assert.assertTrue(uploadPage.isMultipleProgressBarDisapear());
+
+		Assert.assertTrue(uploadPage.isSuccessMessageDisplayed("Your files have been successfully uploaded"));
+
+		uploadPage.clickToSuccessLink();
+
+		Assert.assertTrue(uploadPage.isContentTableDisplayed());
+
+		Assert.assertTrue(uploadPage.isDownloadButtonDisplayed(hueCity));
+		Assert.assertTrue(uploadPage.isDownloadButtonDisplayed(nhatrangCity));
+		Assert.assertTrue(uploadPage.isDownloadButtonDisplayed(quynhonCity));
+
+		Assert.assertTrue(uploadPage.isPlayButtonDisplayed(hueCity));
+		Assert.assertTrue(uploadPage.isPlayButtonDisplayed(nhatrangCity));
+		Assert.assertTrue(uploadPage.isPlayButtonDisplayed(quynhonCity));
+
 	}
-	
 
 	@AfterClass
 	public void afterClass() {

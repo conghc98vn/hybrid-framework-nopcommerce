@@ -434,12 +434,12 @@ public class BasePage {
 		new WebDriverWait(driver, Duration.ofSeconds(longTimeout)).until(ExpectedConditions.elementToBeClickable(element));
 	}
 
-	public void waitForElementInvisible(WebDriver driver, String locatorValue) {
-		new WebDriverWait(driver, Duration.ofSeconds(longTimeout)).until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(locatorValue)));
+	public boolean waitForElementInvisible(WebDriver driver, String locatorValue) {
+		return new WebDriverWait(driver, Duration.ofSeconds(longTimeout)).until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(locatorValue)));
 	}
 
-	public void waitForElementInvisible(WebDriver driver, String locatorValue, String... restParams) {
-		new WebDriverWait(driver, Duration.ofSeconds(longTimeout)).until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(getDynamicLocator(locatorValue, restParams))));
+	public boolean waitForElementInvisible(WebDriver driver, String locatorValue, String... restParams) {
+		return new WebDriverWait(driver, Duration.ofSeconds(longTimeout)).until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(getDynamicLocator(locatorValue, restParams))));
 	}
 
 	public HomePageObject userAbleToLogout(WebDriver driver) {
