@@ -62,7 +62,7 @@ public class Level_08_Switch_Multiple_Page extends BaseTest {
 
 		homePage = registerPage.clickToHomePageLogo();
 
-		homePage.clickToLogoutLink();
+		homePage.userAbleToLogout(driver);
 
 		loginPage = homePage.clickToLoginLink();
 

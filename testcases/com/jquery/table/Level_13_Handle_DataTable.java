@@ -52,10 +52,26 @@ public class Level_13_Handle_DataTable extends BaseTest {
 		homePage.inputToColumnTextboxByName("Country", "Afghanistan");
 		homePage.isRowValuesDisplayed("384187", "Afghanistan", "407124", "791312");
 	}
-	
-	@Test
+
+//	@Test
 	public void TC_04_Icon_Button() {
 		homePage.clickToRowActionByCountryName("Afghanistan", "remove");
+	}
+
+//	@Test
+	public void TC_05_Get_All_Column_Values() {
+
+		homePage.getAllPageValuesByColumnName("Country");
+
+	}
+
+	@Test
+	public void TC_06_Action_By_Index() {
+		homePage.openPageUrl(driver, "https://www.jqueryscript.net/demo/jQuery-Dynamic-Data-Grid-Plugin-appendGrid/");
+
+		homePage.enterToTextboxByColumnmeAndRowIndex("Company", "2", "Test");
+
+		homePage.selectCountryByRowIndex("2", "Hong Kong");
 	}
 
 	@AfterClass

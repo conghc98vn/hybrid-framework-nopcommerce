@@ -123,7 +123,7 @@ public class Level_07_Page_Generator_02 extends BaseTest {
 
 		homePage = registerPage.clickToHomePageLogo();
 
-		homePage.clickToLogoutLink();
+		homePage.userAbleToLogout(driver);
 
 		loginPage = homePage.clickToLoginLink();
 

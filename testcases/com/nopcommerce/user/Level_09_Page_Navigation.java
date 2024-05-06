@@ -62,7 +62,7 @@ public class Level_09_Page_Navigation extends BaseTest {
 
 		homePage = registerPage.clickToHomePageLogo();
 
-		homePage.clickToLogoutLink();
+		homePage.userAbleToLogout(driver);
 
 		loginPage = homePage.clickToLoginLink();
 

@@ -141,7 +141,7 @@ public class Level_07_Page_Generator_01 extends BaseTest {
 
 		homePage = new HomePageObject(driver);
 
-		homePage.clickToLogoutLink();
+		homePage.userAbleToLogout(driver);
 
 		homePage.clickToLoginLink();
 
