@@ -8,4 +8,8 @@ public class PageGeneratorManager {
 		return new HomePageObject(driver);
 	}
 
+	public static UploadPageObject getUploadPage(WebDriver driver) {
+		return new UploadPageObject(driver);
+	}
+
 }

@@ -165,6 +165,10 @@ public class BasePage {
 		getWebElement(driver, locatorValue).click();
 	}
 
+	public void clickToElement(WebDriver driver, WebElement element) {
+		element.click();
+	}
+
 	public void clickToElement(WebDriver driver, String locatorValue, String... restParams) {
 		getWebElement(driver, getDynamicLocator(locatorValue, restParams)).click();
 	}
@@ -390,6 +394,18 @@ public class BasePage {
 		return explicitWait.until(jQueryLoad) && explicitWait.until(jsLoad);
 	}
 
+	public void uploadMultipleFiles(WebDriver driver, String... fileNames) {
+		String filePath = GlobalContants.UPLOAD_PATH;
+
+		String fullFileName = "";
+
+		for (String file : fileNames) {
+			fullFileName = fullFileName + filePath + file + "\n";
+		}
+		fullFileName = fullFileName.trim();
+		getWebElement(driver, BasePageUI.UPLOAD_FILE_TYPE).sendKeys(fullFileName);
+	}
+
 	public void waitForElementVisible(WebDriver driver, String locatorValue) {
 		new WebDriverWait(driver, Duration.ofSeconds(longTimeout)).until(ExpectedConditions.visibilityOfElementLocated(getByLocator(locatorValue)));
 	}
@@ -412,6 +428,10 @@ public class BasePage {
 
 	public void waitForElementClickable(WebDriver driver, String locatorValue, String... restParams) {
 		new WebDriverWait(driver, Duration.ofSeconds(longTimeout)).until(ExpectedConditions.elementToBeClickable(getByLocator(getDynamicLocator(locatorValue, restParams))));
+	}
+
+	public void waitForElementClickable(WebDriver driver, WebElement element) {
+		new WebDriverWait(driver, Duration.ofSeconds(longTimeout)).until(ExpectedConditions.elementToBeClickable(element));
 	}
 
 	public void waitForElementInvisible(WebDriver driver, String locatorValue) {
