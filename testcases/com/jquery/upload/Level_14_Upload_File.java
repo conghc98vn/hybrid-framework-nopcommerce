@@ -57,11 +57,21 @@ public class Level_14_Upload_File extends BaseTest {
 		Assert.assertTrue(uploadPage.isFileUploadedSuccess(quynhonCity));
 	}
 
-	@Test
+//	@Test
 	public void TC_02_Upload_Multile_File() {
 		uploadPage.refreshCurrentPage(driver);
 		uploadPage.uploadMultipleFiles(driver, fileNames);
 	}
+	
+	@Test
+	public void TC_03_Go_File_IO() {
+		uploadPage.openPageUrl(driver, "https://gofile.io/welcome");
+		
+		uploadPage.uploadMultipleFiles(driver, fileNames);
+		
+		
+	}
+	
 
 	@AfterClass
 	public void afterClass() {
