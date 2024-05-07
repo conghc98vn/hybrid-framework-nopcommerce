@@ -395,7 +395,7 @@ public class BasePage {
 	}
 
 	public void uploadMultipleFiles(WebDriver driver, String... fileNames) {
-		String filePath = GlobalContants.UPLOAD_PATH;
+		String filePath = GlobalConstants.UPLOAD_PATH;
 
 		String fullFileName = "";
 
@@ -454,6 +454,6 @@ public class BasePage {
 		return PageGeneratorManager.getAdminLoginPage(driver);
 	}
 
-	private long longTimeout = GlobalContants.LONG_TIMEOUT;
+	private long longTimeout = GlobalConstants.LONG_TIMEOUT;
 
 }

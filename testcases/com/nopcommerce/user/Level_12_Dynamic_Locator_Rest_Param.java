@@ -12,7 +12,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import commons.GlobalContants;
+import commons.GlobalConstants;
 import commons.PageGeneratorManager;
 import pageObjects.admin.AdminDashboardPageObject;
 import pageObjects.admin.AdminLoginPageObject;
@@ -44,8 +44,8 @@ public class Level_12_Dynamic_Locator_Rest_Param extends BaseTest {
 	AdminLoginPageObject adminLoginPage;
 	AdminDashboardPageObject adminDashboardPage;
 
-	private String userUrl = GlobalContants.DEV_USER_URL;
-	private String adminUrl = GlobalContants.DEV_ADMIN_URL;
+	private String userUrl = GlobalConstants.DEV_USER_URL;
+	private String adminUrl = GlobalConstants.DEV_ADMIN_URL;
 
 	@Parameters("browser")
 	@BeforeClass
@@ -96,7 +96,7 @@ public class Level_12_Dynamic_Locator_Rest_Param extends BaseTest {
 
 		adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
 
-		adminDashboardPage = adminLoginPage.loginAsAdmin(GlobalContants.DEV_ADMIN_USERNAME, GlobalContants.DEV_ADMIN_PASSWORD);
+		adminDashboardPage = adminLoginPage.loginAsAdmin(GlobalConstants.DEV_ADMIN_USERNAME, GlobalConstants.DEV_ADMIN_PASSWORD);
 
 		Assert.assertTrue(adminDashboardPage.isPageLoadedSuccess(driver));
 

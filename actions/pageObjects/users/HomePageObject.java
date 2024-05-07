@@ -32,4 +32,9 @@ public class HomePageObject extends BasePage {
 		return PageGeneratorManager.getCustomerPage(driver);
 	}
 
+	public boolean isRegisterLinkDisplayed() {
+		waitForElementVisible(driver, HomePageUI.REGISTER_LINK);
+		return isElementDisplayed(driver, HomePageUI.REGISTER_LINK);
+	}
+
 }

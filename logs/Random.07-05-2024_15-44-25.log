@@ -1,0 +1,12 @@
+[07-05-2024 15:44:31.417 INFO com.nopcommerce.user.Level_17_ReportNG] - Register_01 - Step 01: Verify Register link is displayed
+[07-05-2024 15:44:31.475 INFO com.nopcommerce.user.Level_17_ReportNG] - --------------FAILED--------------
+[07-05-2024 15:44:31.475 INFO com.nopcommerce.user.Level_17_ReportNG] - Register_01 - Step 02: Click to Register link
+[07-05-2024 15:44:32.622 INFO com.nopcommerce.user.Level_17_ReportNG] - Register_01 - Step 03: Verify Register link is displayed
+[07-05-2024 15:44:32.652 INFO com.nopcommerce.user.Level_17_ReportNG] - --------------PASSED--------------
+[07-05-2024 15:44:32.652 INFO com.nopcommerce.user.Level_17_ReportNG] - Register_01 - Step 04: Enter to FirstName textbox is John
+[07-05-2024 15:44:32.782 INFO com.nopcommerce.user.Level_17_ReportNG] - Register_01 - Step 05: Enter to LastName textbox is Wick
+[07-05-2024 15:44:32.952 INFO com.nopcommerce.user.Level_17_ReportNG] - Register_01 - Step 06: Enter to Email textbox is john6029@gmail.com
+[07-05-2024 15:44:33.006 INFO com.nopcommerce.user.Level_17_ReportNG] - Register_01 - Step 07: Enter to Password textbox is 123123
+[07-05-2024 15:44:33.052 INFO com.nopcommerce.user.Level_17_ReportNG] - Register_01 - Step 08: Enter to Confirm Password textbox is 123123
+[07-05-2024 15:44:33.095 INFO com.nopcommerce.user.Level_17_ReportNG] - Register_01 - Step 09: Click to Register button
+[07-05-2024 15:44:33.689 INFO com.nopcommerce.user.Level_17_ReportNG] - Register_01 - Step 10: Verify Register Susscess Message is displayed

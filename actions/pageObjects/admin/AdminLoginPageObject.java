@@ -10,7 +10,6 @@ public class AdminLoginPageObject extends BasePage {
 	WebDriver driver;
 
 	public AdminLoginPageObject(WebDriver driver) {
-		super();
 		this.driver = driver;
 	}
 

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <suite parallel="false" name="Nop Commerce">
 
-<!--	<test name="Run on Chrome">-->
-<!--		<parameter name="browser" value="Chrome"/>-->
-<!--		<classes>-->
-<!--			<class name="com.nopcommerce.user.Level_04_Multiple_Browser" />-->
-<!--		</classes>-->
-<!--	</test>-->
+
+	<listeners>
+		<listener class-name="commons.MethodListener" />>
+		<listener class-name="reportConfig.ExtentTestListener" />>
+	 </listeners>
 
 	<test name="Run on Firefox">
-		<parameter name="browser" value="Firefox"/>
+		<parameter name="browser" value="Firefox" />
 		<classes>
-			<class name="com.nopcommerce.user.Level_12_Dynamic_Locator_Rest_Param" />
+			<class name="com.nopcommerce.user.Level_18_Extent_v5" />
 		</classes>
 	</test>
 
-<!--	<test name="Run on Egde">-->
-<!--		<parameter name="browser" value="Edge"/>-->
+<!--	<test name="Run on Chrome">-->
+<!--		<parameter name="browser" value="Chrome" />-->
 <!--		<classes>-->
-<!--			<class name="com.nopcommerce.user.Level_04_Multiple_Browser" />-->
+<!--			<class name="com.nopcommerce.user.Level_17_ReportNG" />-->
 <!--		</classes>-->
 <!--	</test>-->
 
