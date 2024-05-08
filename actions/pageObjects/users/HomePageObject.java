@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
 import commons.PageGeneratorManager;
+import io.qameta.allure.Step;
 import pageUIs.users.HomePageUI;
 
 public class HomePageObject extends BasePage {
@@ -14,6 +15,7 @@ public class HomePageObject extends BasePage {
 		this.driver = driver;
 	}
 
+	@Step("Click to Register Link")
 	public RegisterPageObject clickToRegisterLink() {
 		waitForElementClickable(driver, HomePageUI.REGISTER_LINK);
 		clickToElement(driver, HomePageUI.REGISTER_LINK);
@@ -32,6 +34,7 @@ public class HomePageObject extends BasePage {
 		return PageGeneratorManager.getCustomerPage(driver);
 	}
 
+	@Step("Verify the register success message is display")
 	public boolean isRegisterLinkDisplayed() {
 		waitForElementVisible(driver, HomePageUI.REGISTER_LINK);
 		return isElementDisplayed(driver, HomePageUI.REGISTER_LINK);

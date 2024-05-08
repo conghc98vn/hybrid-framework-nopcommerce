@@ -128,7 +128,7 @@ public class BaseTest {
 
 	public void deleteAllFileInFolder(String folderName) {
 		try {
-			String pathFolderDownload = GlobalConstants.REPORTING_NG_IMAGE_PATH;
+			String pathFolderDownload = GlobalConstants.RELATIVE_PROJECT_PATH + File.separator + folderName;
 			File file = new File(pathFolderDownload);
 			File[] listOfFiles = file.listFiles();
 			if (listOfFiles.length != 0) {
