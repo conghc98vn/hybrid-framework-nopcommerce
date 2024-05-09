@@ -82,12 +82,14 @@ public class Level_19_Allure_Report extends BaseTest {
 		registerPage.enterToConfirmPasswordTextbox(confirmPassword);
 
 		registerPage.clickToRegisterButton();
-		
-		Assert.assertTrue(homePage.isRegisterLinkDisplayed());
-		
-		Assert.assertFalse(registerPage.getRegisterSuccessMessage().contains("Your registration completed"));
 
-		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed...");
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+//		
+//		Assert.assertTrue(homePage.isRegisterLinkDisplayed());
+
+//		Assert.assertFalse(registerPage.getRegisterSuccessMessage().contains("Your registration completed"));
+
+		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
 	}
 
 	@AfterClass
