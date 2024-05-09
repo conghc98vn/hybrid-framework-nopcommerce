@@ -37,6 +37,7 @@ public class Level_07_Page_Generator_03 extends BaseTest {
 		driver = getBrowserDriver(browserName);
 
 		homePage = PageGeneratorManager.getHomePage(driver);
+		homePage.openPageUrl(driver, "https://demo.nopcommerce.com/");
 	}
 
 	@Test

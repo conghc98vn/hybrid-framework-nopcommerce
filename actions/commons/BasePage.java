@@ -20,7 +20,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pageObjects.admin.AdminLoginPageObject;
 import pageObjects.users.HomePageObject;
-import pageUIs.users.BasePageUI;
+import pageUIs.users.BaseElementUI;
 
 public class BasePage {
 
@@ -439,7 +439,7 @@ public class BasePage {
 			fullFileName = fullFileName + filePath + file + "\n";
 		}
 		fullFileName = fullFileName.trim();
-		getWebElement(driver, BasePageUI.UPLOAD_FILE_TYPE).sendKeys(fullFileName);
+		getWebElement(driver, BaseElementUI.UPLOAD_FILE_TYPE).sendKeys(fullFileName);
 	}
 
 	public void waitForElementVisible(WebDriver driver, String locatorValue) {
@@ -479,14 +479,14 @@ public class BasePage {
 	}
 
 	public HomePageObject userAbleToLogout(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.USER_LOGOUT_LINK);
-		clickToElement(driver, BasePageUI.USER_LOGOUT_LINK);
+		waitForElementClickable(driver, BaseElementUI.USER_LOGOUT_LINK);
+		clickToElement(driver, BaseElementUI.USER_LOGOUT_LINK);
 		return PageGeneratorManager.getHomePage(driver);
 	}
 
 	public AdminLoginPageObject adminAbleToLogout(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.ADMIN_LOGOUT_LINK);
-		clickToElement(driver, BasePageUI.ADMIN_LOGOUT_LINK);
+		waitForElementClickable(driver, BaseElementUI.ADMIN_LOGOUT_LINK);
+		clickToElement(driver, BaseElementUI.ADMIN_LOGOUT_LINK);
 		return PageGeneratorManager.getAdminLoginPage(driver);
 	}
 
