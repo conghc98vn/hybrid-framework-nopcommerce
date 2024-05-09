@@ -8,18 +8,13 @@
 		<listener class-name="reportConfig.AllureTestListener" />>
 	 </listeners>
 
-	<test name="Run on Firefox">
+	<test name="Run on Firefox" preserve-order="true">
 		<parameter name="browser" value="Firefox" />
 		<classes> 
-			<class name="com.nopcommerce.user.Level_21_Pattern_Object" />
+			<class name="com.nopcommerce.share.Common_Register" />
+			<class name="com.nopcommerce.share.Product_Detail" />
+
 		</classes>
 	</test>
-
-<!--	<test name="Run on Chrome">-->
-<!--		<parameter name="browser" value="Chrome" />-->
-<!--		<classes>-->
-<!--			<class name="com.nopcommerce.user.Level_17_ReportNG" />-->
-<!--		</classes>-->
-<!--	</test>-->
 
 </suite> 
