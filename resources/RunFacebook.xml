@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite parallel="false" name="Facebook">
+
+
+	<listeners>
+		<listener class-name="commons.MethodListener" />>
+		<listener class-name="reportConfig.AllureTestListener" />>
+	 </listeners>
+
+	<parameter name="url" value="https://wwww.facebook.com/"/>>
+
+	<test name="Run on Firefox">
+		<parameter name="browser" value="Firefox" />
+		<classes> 
+			<class name="com.facebook.home.Level_20_Element_Undisplayed" />
+		</classes>
+	</test>
+
+<!--	<test name="Run on Chrome">-->
+<!--		<parameter name="browser" value="Chrome" />-->
+<!--		<classes>-->
+<!--			<class name="com.nopcommerce.user.Level_17_ReportNG" />-->
+<!--		</classes>-->
+<!--	</test>-->
+
+</suite> 

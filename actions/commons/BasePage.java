@@ -1,6 +1,7 @@
 package commons;
 
 import java.time.Duration;
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
@@ -263,6 +264,41 @@ public class BasePage {
 		}
 	}
 
+	public void setImplicitWait(WebDriver driver, long timeout) {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeout));
+	}
+
+	public boolean isElementUndisplayed(WebDriver driver, String locatorValue) {
+		setImplicitWait(driver, shortTimeout);
+		List<WebElement> elements = getListWebElement(driver, locatorValue);
+		setImplicitWait(driver, longTimeout);
+		if (elements.size() == 0) {
+			return true;
+		} else if (elements.size() > 0 && !elements.get(0).isDisplayed()) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public boolean isElementUndisplayed(WebDriver driver, String locatorValue, String... restStrings) {
+		System.out.println("Start time = " + new Date().toString());
+		List<WebElement> elements = getListWebElement(driver, getDynamicLocator(locatorValue, restStrings));
+
+		if (elements.size() == 0) {
+			System.out.println("Element not in DOM");
+			System.out.println("Eng time = " + new Date().toString());
+			return true;
+		} else if (elements.size() > 0 && !elements.get(0).isDisplayed()) {
+			System.out.println("Element in DOM but not visible/ displayed");
+			System.out.println("Eng time = " + new Date().toString());
+			return true;
+		} else {
+			System.out.println("Element in DOM and visible");
+			return false;
+		}
+	}
+
 	public boolean isElementDisplayed(WebDriver driver, String locatorValue) {
 		return getWebElement(driver, locatorValue).isDisplayed();
 	}
@@ -455,5 +491,6 @@ public class BasePage {
 	}
 
 	private long longTimeout = GlobalConstants.LONG_TIMEOUT;
+	private long shortTimeout = GlobalConstants.SHORT_TIMEOUT;
 
 }
