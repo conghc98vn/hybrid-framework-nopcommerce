@@ -1,0 +1,8 @@
+[09-05-2024 15:49:59.047 INFO com.facebook.home.Level_20_Element_Undisplayed] - --------------PASSED--------------
+[09-05-2024 15:49:59.065 INFO com.facebook.home.Level_20_Element_Undisplayed] - --------------PASSED--------------
+[09-05-2024 15:49:59.080 INFO com.facebook.home.Level_20_Element_Undisplayed] - --------------PASSED--------------
+[09-05-2024 15:49:59.096 INFO com.facebook.home.Level_20_Element_Undisplayed] - --------------PASSED--------------
+[09-05-2024 15:49:59.141 INFO com.facebook.home.Level_20_Element_Undisplayed] - Verify Confirm Email textbox is displayed
+[09-05-2024 15:49:59.167 INFO com.facebook.home.Level_20_Element_Undisplayed] - --------------FAILED--------------
+[09-05-2024 15:49:59.400 INFO com.facebook.home.Level_20_Element_Undisplayed] - Verify Confirm Email textbox is not displayed
+[09-05-2024 15:49:59.410 INFO com.facebook.home.Level_20_Element_Undisplayed] - --------------PASSED--------------
