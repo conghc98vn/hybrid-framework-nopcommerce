@@ -1,4 +1,4 @@
-package com.nopcommerce.share;
+package com.nopcommerce.cookie;
 
 import static org.testng.Assert.assertEquals;
 

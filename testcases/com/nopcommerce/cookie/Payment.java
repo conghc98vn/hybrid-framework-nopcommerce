@@ -1,4 +1,4 @@
-package com.nopcommerce.share;
+package com.nopcommerce.cookie;
 
 import static org.testng.Assert.assertEquals;
 
@@ -17,7 +17,7 @@ import pageObjects.users.HomePageObject;
 import pageObjects.users.LoginPageObject;
 import pageObjects.users.RegisterPageObject;
 
-public class Order extends BaseTest {
+public class Payment extends BaseTest {
 
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
@@ -37,17 +37,13 @@ public class Order extends BaseTest {
 
 		homePage = PageGeneratorManager.getHomePage(driver);
 
-		homePage = registerPage.clickToHomePageLogo();
-
-		homePage.userAbleToLogout(driver);
-
 		loginPage = homePage.clickToLoginLink();
 
-		loginPage.enterToEmailTextbox(Common_Register.email);
-		loginPage.enterToPasswordTextbox(Common_Register.pasword);
-		homePage = loginPage.clickToLoginButton();
+		loginPage.setCookies(driver, Common_Register.cookies);
+		loginPage.sleepInSecond(3);
+		loginPage.refreshCurrentPage(driver);
 
-		customerPage = homePage.clickToMyAccountLink();
+		customerPage = homePage.openMyAccountLink();
 
 		assertEquals(customerPage.getFirstNameAttributeValue(), Common_Register.firstName);
 		assertEquals(customerPage.getLastNameAttributeValue(), Common_Register.lastName);
@@ -55,28 +51,28 @@ public class Order extends BaseTest {
 	}
 
 	@Test
-	public void Order_01_Create() {
+	public void Product_01_Create() {
 
 	}
 
 	@Test
-	public void Order_02_Search() {
+	public void Product_02_Search() {
 
 	}
 
 	@Test
-	public void Order_03_Update() {
+	public void Product_03_Update() {
 
 	}
 
 	@Test
-	public void Order_04_Delete() {
+	public void Product_04_Delete() {
 
 	}
 
 	@AfterClass
 	public void afterClass() {
-		quitBrowserDriver();
+//		quitBrowserDriver();
 	}
 
 }

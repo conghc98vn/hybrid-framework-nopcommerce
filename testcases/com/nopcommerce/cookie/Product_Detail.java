@@ -1,4 +1,4 @@
-package com.nopcommerce.share;
+package com.nopcommerce.cookie;
 
 import static org.testng.Assert.assertEquals;
 
@@ -17,7 +17,7 @@ import pageObjects.users.HomePageObject;
 import pageObjects.users.LoginPageObject;
 import pageObjects.users.RegisterPageObject;
 
-public class Order extends BaseTest {
+public class Product_Detail extends BaseTest {
 
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
@@ -37,10 +37,6 @@ public class Order extends BaseTest {
 
 		homePage = PageGeneratorManager.getHomePage(driver);
 
-		homePage = registerPage.clickToHomePageLogo();
-
-		homePage.userAbleToLogout(driver);
-
 		loginPage = homePage.clickToLoginLink();
 
 		loginPage.enterToEmailTextbox(Common_Register.email);
@@ -55,22 +51,22 @@ public class Order extends BaseTest {
 	}
 
 	@Test
-	public void Order_01_Create() {
+	public void Order_01_Invalid_Address() {
 
 	}
 
 	@Test
-	public void Order_02_Search() {
+	public void Order_02_Invalid_SSN() {
 
 	}
 
 	@Test
-	public void Order_03_Update() {
+	public void Order_03_Invalid_Phone() {
 
 	}
 
 	@Test
-	public void Order_04_Delete() {
+	public void Order_04_Success() {
 
 	}
 

@@ -36,13 +36,12 @@ public class Payment extends BaseTest {
 		driver = getBrowserDriver(browserName);
 
 		homePage = PageGeneratorManager.getHomePage(driver);
-		homePage.openPageUrl(driver, "https://demo.nopcommerce.com/");
-	
 
 		loginPage = homePage.clickToLoginLink();
 
 		loginPage.enterToEmailTextbox(Common_Register.email);
 		loginPage.enterToPasswordTextbox(Common_Register.pasword);
+
 		homePage = loginPage.clickToLoginButton();
 
 		customerPage = homePage.clickToMyAccountLink();
@@ -52,26 +51,23 @@ public class Payment extends BaseTest {
 		assertEquals(customerPage.getEmailAttributeValue(), Common_Register.email);
 	}
 
-	
 	@Test
 	public void Product_01_Create() {
 
-
 	}
-	
+
 	@Test
 	public void Product_02_Search() {
 
-
 	}
+
 	@Test
 	public void Product_03_Update() {
 
-
 	}
+
 	@Test
 	public void Product_04_Delete() {
-
 
 	}
 

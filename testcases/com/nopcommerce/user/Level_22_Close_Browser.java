@@ -1,10 +1,9 @@
-package com.nopcommerce.share;
-
-import static org.testng.Assert.assertEquals;
+package com.nopcommerce.user;
 
 import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -17,7 +16,7 @@ import pageObjects.users.HomePageObject;
 import pageObjects.users.LoginPageObject;
 import pageObjects.users.RegisterPageObject;
 
-public class Order extends BaseTest {
+public class Level_22_Close_Browser extends BaseTest {
 
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
@@ -37,46 +36,42 @@ public class Order extends BaseTest {
 
 		homePage = PageGeneratorManager.getHomePage(driver);
 
-		homePage = registerPage.clickToHomePageLogo();
+		homePage.clickToHeaderLinkByName(driver, "Register");
 
-		homePage.userAbleToLogout(driver);
+		registerPage = PageGeneratorManager.getRegisterPage(driver);
 
-		loginPage = homePage.clickToLoginLink();
+		registerPage.clickToButtonByText("Register");
 
-		loginPage.enterToEmailTextbox(Common_Register.email);
-		loginPage.enterToPasswordTextbox(Common_Register.pasword);
-		homePage = loginPage.clickToLoginButton();
-
-		customerPage = homePage.clickToMyAccountLink();
-
-		assertEquals(customerPage.getFirstNameAttributeValue(), Common_Register.firstName);
-		assertEquals(customerPage.getLastNameAttributeValue(), Common_Register.lastName);
-		assertEquals(customerPage.getEmailAttributeValue(), Common_Register.email);
-	}
-
-	@Test
-	public void Order_01_Create() {
+		Assert.assertEquals("a", "b");
 
 	}
 
 	@Test
-	public void Order_02_Search() {
+	public void Register_01_Empty_Data() {
 
 	}
 
 	@Test
-	public void Order_03_Update() {
+	public void Register_02_Invalid_Email() {
 
 	}
 
 	@Test
-	public void Order_04_Delete() {
+	public void Register_03_Invalid_Password() {
+	}
+
+	@Test
+	public void Register_04_Incorrect_Confirm_Password() {
+	}
+
+	@Test
+	public void Register_05_Success() {
 
 	}
 
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void afterClass() {
-		quitBrowserDriver();
+		closeBrowserDriver();
 	}
 
 }

@@ -7,6 +7,7 @@ import java.util.Set;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -116,6 +117,16 @@ public class BasePage {
 			Thread.sleep(timeout * 1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
+		}
+	}
+
+	public Set<Cookie> getBrowserCookies(WebDriver driver) {
+		return driver.manage().getCookies();
+	}
+
+	public void setCookies(WebDriver driver, Set<Cookie> cookies) {
+		for (Cookie cookie : cookies) {
+			driver.manage().addCookie(cookie);
 		}
 	}
 

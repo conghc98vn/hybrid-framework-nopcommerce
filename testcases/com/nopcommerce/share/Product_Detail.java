@@ -36,7 +36,6 @@ public class Product_Detail extends BaseTest {
 		driver = getBrowserDriver(browserName);
 
 		homePage = PageGeneratorManager.getHomePage(driver);
-		homePage.openPageUrl(driver, "https://demo.nopcommerce.com/");
 
 		loginPage = homePage.clickToLoginLink();
 
@@ -51,26 +50,23 @@ public class Product_Detail extends BaseTest {
 		assertEquals(customerPage.getEmailAttributeValue(), Common_Register.email);
 	}
 
-	
 	@Test
 	public void Order_01_Invalid_Address() {
 
-
 	}
-	
+
 	@Test
 	public void Order_02_Invalid_SSN() {
 
-
 	}
+
 	@Test
 	public void Order_03_Invalid_Phone() {
 
-
 	}
+
 	@Test
 	public void Order_04_Success() {
-
 
 	}
 
