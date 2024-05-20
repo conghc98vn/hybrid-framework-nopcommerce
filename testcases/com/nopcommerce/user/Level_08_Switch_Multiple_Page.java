@@ -92,7 +92,7 @@ public class Level_08_Switch_Multiple_Page extends BaseTest {
 
 	@AfterClass
 	public void afterClass() {
-		quitBrowserDriver();
+		closeBrowserDriver();
 	}
 
 }

@@ -133,7 +133,7 @@ public class Level_12_Dynamic_Locator_Rest_Param extends BaseTest {
 
 	@AfterClass
 	public void afterClass() {
-		quitBrowserDriver();
+		closeBrowserDriver();
 	}
 
 }

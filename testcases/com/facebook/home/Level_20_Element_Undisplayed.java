@@ -86,7 +86,7 @@ public class Level_20_Element_Undisplayed extends BaseTest {
 
 	@AfterClass
 	public void afterClass() {
-		quitBrowserDriver();
+		closeBrowserDriver();
 	}
 
 }

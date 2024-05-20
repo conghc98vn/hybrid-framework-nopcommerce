@@ -2,8 +2,8 @@ package com.nopcommerce.user;
 
 import static org.testng.Assert.assertEquals;
 
+import java.time.Duration;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -37,7 +37,8 @@ public class Level_03_Page_Object_Pattern extends BasePage {
 
 		driver.get("https://demo.nopcommerce.com/");
 
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+//		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
 	@Test

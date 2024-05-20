@@ -72,7 +72,7 @@ public class Product_Detail extends BaseTest {
 
 	@AfterClass
 	public void afterClass() {
-		quitBrowserDriver();
+		closeBrowserDriver();
 	}
 
 }

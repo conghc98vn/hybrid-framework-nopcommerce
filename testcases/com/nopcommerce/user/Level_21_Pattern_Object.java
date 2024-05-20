@@ -159,7 +159,7 @@ public class Level_21_Pattern_Object extends BaseTest {
 
 //	@AfterClass
 	public void afterClass() {
-		quitBrowserDriver();
+		closeBrowserDriver();
 	}
 
 }

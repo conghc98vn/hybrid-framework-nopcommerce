@@ -67,7 +67,7 @@ public class Common_Register extends BaseTest {
 
 		cookies = registerPage.getBrowserCookies(driver);
 
-		quitBrowserDriver();
+		closeBrowserDriver();
 
 	}
 

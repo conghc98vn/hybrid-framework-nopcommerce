@@ -63,7 +63,7 @@ public class Level_15_Assert_Verify extends BaseTest {
 
 	@AfterClass
 	public void afterClass() {
-		quitBrowserDriver();
+		closeBrowserDriver();
 	}
 
 }

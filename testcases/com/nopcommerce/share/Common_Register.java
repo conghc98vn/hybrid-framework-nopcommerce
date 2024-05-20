@@ -44,7 +44,7 @@ public class Common_Register extends BaseTest {
 
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
 
-		quitBrowserDriver();
+		closeBrowserDriver();
 	}
 
 }

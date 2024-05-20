@@ -1,7 +1,7 @@
 package com.nopcommerce.user;
 
+import java.time.Duration;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -25,7 +25,8 @@ public class Level_02_Apply_BasePage_01_Initial {
 		System.setProperty("webdriver.chrome.driver", projectPath + "/browserDrivers/chromedriver");
 		driver = new ChromeDriver();
 
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+//		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 	}
 

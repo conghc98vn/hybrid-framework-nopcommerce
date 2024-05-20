@@ -83,7 +83,7 @@ public class Level_17_ReportNG extends BaseTest {
 
 	@AfterClass
 	public void afterClass() {
-		quitBrowserDriver();
+		closeBrowserDriver();
 	}
 
 }

@@ -90,7 +90,7 @@ public class Level_09_Page_Navigation extends BaseTest {
 
 	@AfterClass
 	public void afterClass() {
-		quitBrowserDriver();
+		closeBrowserDriver();
 	}
 
 }

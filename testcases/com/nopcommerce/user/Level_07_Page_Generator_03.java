@@ -141,7 +141,7 @@ public class Level_07_Page_Generator_03 extends BaseTest {
 
 	@AfterClass
 	public void afterClass() {
-		quitBrowserDriver();
+		closeBrowserDriver();
 	}
 
 }

@@ -109,7 +109,7 @@ public class Level_10_Switch_Site_Url extends BaseTest {
 
 	@AfterClass
 	public void afterClass() {
-		quitBrowserDriver();
+		closeBrowserDriver();
 	}
 
 }

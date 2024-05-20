@@ -12,7 +12,7 @@ import io.qameta.allure.Attachment;
 
 public class AllureTestListener implements ITestListener {
 
-	private static String getTestMethodName(ITestResult iTestResult) {
+	public static String getTestMethodName(ITestResult iTestResult) {
 		return iTestResult.getMethod().getConstructorOrMethod().getName();
 	}
 

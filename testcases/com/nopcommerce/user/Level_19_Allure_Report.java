@@ -94,7 +94,7 @@ public class Level_19_Allure_Report extends BaseTest {
 
 	@AfterClass
 	public void afterClass() {
-		quitBrowserDriver();
+		closeBrowserDriver();
 	}
 
 }

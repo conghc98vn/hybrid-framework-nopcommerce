@@ -108,7 +108,7 @@ public class Level_11_Global_Constants extends BaseTest {
 
 	@AfterClass
 	public void afterClass() {
-		quitBrowserDriver();
+		closeBrowserDriver();
 	}
 
 }

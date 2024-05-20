@@ -73,7 +73,7 @@ public class Level_18_Extent_v3 extends BaseTest {
 
 	@AfterClass
 	public void afterClass() {
-		quitBrowserDriver();
+		closeBrowserDriver();
 	}
 
 }
