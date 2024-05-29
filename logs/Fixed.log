@@ -411,3 +411,69 @@
 [09-05-2024 19:14:11.634 INFO com.nopcommerce.user.Level_19_Allure_Report] - --------------PASSED--------------
 [09-05-2024 19:43:09.700 INFO com.nopcommerce.user.Level_18_Extent_v3] - --------------FAILED--------------
 [09-05-2024 19:43:10.955 INFO com.nopcommerce.user.Level_18_Extent_v3] - --------------PASSED--------------
+[27-05-2024 21:23:54.151 INFO com.nopcommerce.cookie.Common_Register] - OS name = mac os x
+[27-05-2024 21:23:54.154 INFO com.nopcommerce.cookie.Common_Register] - Driver instance name = firefoxdriver: firefox on mac (c7d19641-4651-4556-bef0-dcc542b26361)
+[28-05-2024 19:14:42.843 INFO com.nopcommerce.user.Level_22_Close_Browser] - OS name = mac os x
+[28-05-2024 19:14:42.848 INFO com.nopcommerce.user.Level_22_Close_Browser] - Driver instance name = firefoxdriver: firefox on mac (c6b65094-da1a-43cf-8d72-cbbccf385c70)
+[28-05-2024 19:18:00.764 INFO com.nopcommerce.user.Level_23_FakerDataTest] - --------------PASSED--------------
+[28-05-2024 19:18:02.785 INFO com.nopcommerce.user.Level_23_FakerDataTest] - --------------PASSED--------------
+[28-05-2024 19:19:07.327 INFO com.nopcommerce.user.Level_23_FakerDataTest] - OS name = mac os x
+[28-05-2024 19:19:07.330 INFO com.nopcommerce.user.Level_23_FakerDataTest] - Driver instance name = firefoxdriver: firefox on mac (64adccfc-6515-4b4e-8aa4-9b0add68d248)
+[28-05-2024 19:24:43.202 INFO com.nopcommerce.user.Level_23_FakerDataTest] - --------------PASSED--------------
+[28-05-2024 19:24:44.486 INFO com.nopcommerce.user.Level_23_FakerDataTest] - --------------PASSED--------------
+[28-05-2024 19:29:09.615 INFO com.nopcommerce.user.Level_23_FakerDataTest] - --------------PASSED--------------
+[28-05-2024 19:29:15.130 INFO com.nopcommerce.user.Level_23_FakerDataTest] - --------------PASSED--------------
+[28-05-2024 19:30:05.407 INFO com.nopcommerce.user.Level_23_FakerDataTest] - --------------PASSED--------------
+[28-05-2024 19:30:06.675 INFO com.nopcommerce.user.Level_23_FakerDataTest] - --------------PASSED--------------
+[28-05-2024 22:06:51.217 INFO com.nopcommerce.user.Level_24_Data_In_TestClass] - --------------PASSED--------------
+[28-05-2024 22:06:52.276 INFO com.nopcommerce.user.Level_24_Data_In_TestClass] - --------------PASSED--------------
+[28-05-2024 22:07:01.559 INFO com.nopcommerce.user.Level_24_Data_In_TestClass] - OS name = mac os x
+[28-05-2024 22:07:01.560 INFO com.nopcommerce.user.Level_24_Data_In_TestClass] - Driver instance name = firefoxdriver: firefox on mac (d236f66f-c3d2-4e8d-b728-76015eb92fc5)
+[28-05-2024 22:11:53.845 INFO com.nopcommerce.user.Level_26_Data_In_Internal] - --------------PASSED--------------
+[28-05-2024 22:11:55.861 INFO com.nopcommerce.user.Level_26_Data_In_Internal] - --------------PASSED--------------
+[28-05-2024 22:12:01.893 INFO com.nopcommerce.user.Level_26_Data_In_Internal] - OS name = mac os x
+[28-05-2024 22:12:01.895 INFO com.nopcommerce.user.Level_26_Data_In_Internal] - Driver instance name = firefoxdriver: firefox on mac (728ec227-5813-459e-a9ce-8f05b86751ae)
+[29-05-2024 07:37:51.138 INFO com.nopcommerce.user.Level_27_Data_POJO] - --------------PASSED--------------
+[29-05-2024 07:37:51.927 INFO com.nopcommerce.user.Level_27_Data_POJO] - --------------PASSED--------------
+[29-05-2024 07:37:55.745 INFO com.nopcommerce.user.Level_27_Data_POJO] - OS name = mac os x
+[29-05-2024 07:37:55.746 INFO com.nopcommerce.user.Level_27_Data_POJO] - Driver instance name = firefoxdriver: firefox on mac (9d7353d7-2eaa-4eba-b70d-65c97a356f0a)
+[29-05-2024 07:38:37.901 INFO com.nopcommerce.user.Level_27_Data_POJO] - --------------PASSED--------------
+[29-05-2024 07:38:38.606 INFO com.nopcommerce.user.Level_27_Data_POJO] - --------------PASSED--------------
+[29-05-2024 07:38:44.025 INFO com.nopcommerce.user.Level_27_Data_POJO] - OS name = mac os x
+[29-05-2024 07:38:44.027 INFO com.nopcommerce.user.Level_27_Data_POJO] - Driver instance name = firefoxdriver: firefox on mac (404dbfa4-bf84-4462-89cd-6c965d783ad2)
+[29-05-2024 07:50:20.367 INFO com.nopcommerce.user.Level_27_Data_POJO] - --------------PASSED--------------
+[29-05-2024 07:50:21.105 INFO com.nopcommerce.user.Level_27_Data_POJO] - --------------PASSED--------------
+[29-05-2024 07:50:26.648 INFO com.nopcommerce.user.Level_27_Data_POJO] - OS name = mac os x
+[29-05-2024 07:50:26.649 INFO com.nopcommerce.user.Level_27_Data_POJO] - Driver instance name = firefoxdriver: firefox on mac (7cf0f189-b8f8-43f4-a248-55bd4b527ff3)
+[29-05-2024 07:53:49.527 INFO com.nopcommerce.user.Level_27_Data_POJO] - --------------PASSED--------------
+[29-05-2024 07:53:50.385 INFO com.nopcommerce.user.Level_27_Data_POJO] - --------------PASSED--------------
+[29-05-2024 07:53:55.527 INFO com.nopcommerce.user.Level_27_Data_POJO] - OS name = mac os x
+[29-05-2024 07:53:55.528 INFO com.nopcommerce.user.Level_27_Data_POJO] - Driver instance name = firefoxdriver: firefox on mac (56ca930d-8f0d-4a35-bbbe-e91ad7b5d478)
+[29-05-2024 12:01:42.942 INFO com.nopcommerce.user.Level_28_Data_JSON] - --------------PASSED--------------
+[29-05-2024 12:01:43.716 INFO com.nopcommerce.user.Level_28_Data_JSON] - --------------PASSED--------------
+[29-05-2024 12:01:51.050 INFO com.nopcommerce.user.Level_28_Data_JSON] - OS name = mac os x
+[29-05-2024 12:01:51.050 INFO com.nopcommerce.user.Level_28_Data_JSON] - Driver instance name = firefoxdriver: firefox on mac (4cd3a02c-b204-45e9-8f9d-9276124ea22a)
+[29-05-2024 14:48:41.244 INFO com.nopcommerce.user.Level_28_Data_JSON] - --------------PASSED--------------
+[29-05-2024 14:48:41.969 INFO com.nopcommerce.user.Level_28_Data_JSON] - --------------PASSED--------------
+[29-05-2024 14:48:47.662 INFO com.nopcommerce.user.Level_28_Data_JSON] - OS name = mac os x
+[29-05-2024 14:48:47.663 INFO com.nopcommerce.user.Level_28_Data_JSON] - Driver instance name = firefoxdriver: firefox on mac (c3480558-2094-4ad6-85eb-f9f779f3bce2)
+[29-05-2024 15:48:31.199 INFO com.nopcommerce.user.Level_29_Data_Excel] - --------------PASSED--------------
+[29-05-2024 15:48:31.960 INFO com.nopcommerce.user.Level_29_Data_Excel] - --------------PASSED--------------
+[29-05-2024 15:48:39.414 INFO com.nopcommerce.user.Level_29_Data_Excel] - OS name = mac os x
+[29-05-2024 15:48:39.415 INFO com.nopcommerce.user.Level_29_Data_Excel] - Driver instance name = firefoxdriver: firefox on mac (d5763f7d-9568-485d-b3ab-7d23e60b82e4)
+[29-05-2024 17:12:59.603 INFO com.nopcommerce.user.Level_30_Test_Not_Dependencies] - OS name = mac os x
+[29-05-2024 17:12:59.606 INFO com.nopcommerce.user.Level_30_Test_Not_Dependencies] - Driver instance name = firefoxdriver: firefox on mac (09dd5523-2d83-4cbf-b64c-bf3986c60cec)
+[29-05-2024 17:13:12.117 INFO com.nopcommerce.user.Level_30_Test_Not_Dependencies] - OS name = mac os x
+[29-05-2024 17:13:12.118 INFO com.nopcommerce.user.Level_30_Test_Not_Dependencies] - Driver instance name = firefoxdriver: firefox on mac (f3dd0741-6158-46d1-a350-3e60a98f7b2c)
+[29-05-2024 17:13:24.800 INFO com.nopcommerce.user.Level_30_Test_Not_Dependencies] - OS name = mac os x
+[29-05-2024 17:13:24.801 INFO com.nopcommerce.user.Level_30_Test_Not_Dependencies] - Driver instance name = firefoxdriver: firefox on mac (6b2d65fb-704b-400c-968f-41a3f32c5afe)
+[29-05-2024 17:13:33.689 INFO com.nopcommerce.user.Level_30_Test_Not_Dependencies] - OS name = mac os x
+[29-05-2024 17:13:33.690 INFO com.nopcommerce.user.Level_30_Test_Not_Dependencies] - Driver instance name = firefoxdriver: firefox on mac (3d8dc008-0761-432b-80a0-ddac3658dd8e)
+[29-05-2024 17:14:27.829 INFO com.nopcommerce.user.Level_30_Test_Not_Dependencies] - OS name = mac os x
+[29-05-2024 17:14:27.833 INFO com.nopcommerce.user.Level_30_Test_Not_Dependencies] - Driver instance name = firefoxdriver: firefox on mac (f34c117d-f269-4d23-b573-1eeb6a0703b4)
+[29-05-2024 17:14:36.612 INFO com.nopcommerce.user.Level_30_Test_Not_Dependencies] - OS name = mac os x
+[29-05-2024 17:14:36.613 INFO com.nopcommerce.user.Level_30_Test_Not_Dependencies] - Driver instance name = firefoxdriver: firefox on mac (8e05d38f-7d1e-415a-912c-8377d14ce9d8)
+[29-05-2024 17:14:45.449 INFO com.nopcommerce.user.Level_30_Test_Not_Dependencies] - OS name = mac os x
+[29-05-2024 17:14:45.449 INFO com.nopcommerce.user.Level_30_Test_Not_Dependencies] - Driver instance name = firefoxdriver: firefox on mac (ac3795fb-3d56-4f50-9f6e-88be61748d29)
+[29-05-2024 17:14:54.334 INFO com.nopcommerce.user.Level_30_Test_Not_Dependencies] - OS name = mac os x
+[29-05-2024 17:14:54.335 INFO com.nopcommerce.user.Level_30_Test_Not_Dependencies] - Driver instance name = firefoxdriver: firefox on mac (de6b3b78-c5b3-41a1-8927-1ea18badf98e)

@@ -1,12 +1,12 @@
 package commons;
 
-import java.util.List;
-
 import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.internal.Utils;
+
+import java.util.List;
 
 public class MethodListener implements IInvokedMethodListener {
 	@Override

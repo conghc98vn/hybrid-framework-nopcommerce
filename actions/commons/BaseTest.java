@@ -198,4 +198,9 @@ public class BaseTest extends BasePage {
 		Random rand = new Random();
 		return "john" + rand.nextInt(9999) + "@gmail.com";
 	}
+
+	protected String getEmailAddress(String value) {
+		Random rand = new Random();
+		return value + rand.nextInt(9999) + "@gmail.com";
+	}
 }

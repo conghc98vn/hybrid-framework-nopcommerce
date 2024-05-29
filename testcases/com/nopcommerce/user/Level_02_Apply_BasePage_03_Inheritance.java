@@ -1,8 +1,6 @@
 package com.nopcommerce.user;
 
-import java.time.Duration;
-import java.util.Random;
-
+import commons.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -10,7 +8,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import commons.BasePage;
+import java.time.Duration;
+import java.util.Random;
 
 public class Level_02_Apply_BasePage_03_Inheritance extends BasePage {
 

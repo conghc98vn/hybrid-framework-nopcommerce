@@ -1,5 +1,6 @@
 package reportConfig;
 
+import commons.BaseTest;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -7,8 +8,6 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
-
-import commons.BaseTest;
 
 public class ReportNGListener implements ITestListener {
 

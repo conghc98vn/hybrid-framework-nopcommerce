@@ -1,9 +1,8 @@
 package pageObjects.admin;
 
-import org.openqa.selenium.WebDriver;
-
 import commons.BasePage;
 import commons.PageGeneratorManager;
+import org.openqa.selenium.WebDriver;
 import pageUIs.admin.AdminLoginPageUI;
 
 public class AdminLoginPageObject extends BasePage {

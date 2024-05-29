@@ -1,10 +1,10 @@
 package reportConfig;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class ExtentTestManager {
 	static Map<Integer, ExtentTest> extentTestMap = new HashMap<Integer, ExtentTest>();

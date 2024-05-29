@@ -4,7 +4,9 @@ import org.openqa.selenium.WebDriver;
 
 import commons.BaseElement;
 import io.qameta.allure.Step;
+import jsonData.nopcommerce.UserInfoData;
 import pageUIs.users.RegisterPageUI;
+import pojoData.UserInfo;
 
 public class RegisterPageObject extends BaseElement {
 
@@ -75,6 +77,22 @@ public class RegisterPageObject extends BaseElement {
 	public String getRegisterSuccessMessage() {
 		waitForElementClickable(driver, RegisterPageUI.REGISTER_SUCCESS_MESSAGE);
 		return getElementText(driver, RegisterPageUI.REGISTER_SUCCESS_MESSAGE);
+	}
+
+	public void setToRegisterForm(UserInfo userInfo) {
+		enterToFirstNameTextox(userInfo.getFirstName());
+		enterToLastNameTextbox(userInfo.getLastName());
+		enterToEmailTextbox(userInfo.getEmailAddress());
+		enterToPasswordTextbox(userInfo.getPassword());
+		enterToConfirmPasswordTextbox(userInfo.getPassword());
+	}
+
+	public void enterToRegisterForm(UserInfoData userInfo) {
+		enterToFirstNameTextox(userInfo.getFirstname());
+		enterToLastNameTextbox(userInfo.getLastname());
+		enterToEmailTextbox(userInfo.getEmail());
+		enterToPasswordTextbox(userInfo.getPassword());
+		enterToConfirmPasswordTextbox(userInfo.getPassword());
 	}
 
 }

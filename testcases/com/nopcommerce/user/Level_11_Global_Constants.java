@@ -1,28 +1,21 @@
 package com.nopcommerce.user;
 
-import static org.testng.Assert.assertEquals;
-
-import java.util.Random;
-
+import commons.BaseTest;
+import commons.GlobalConstants;
+import commons.PageGeneratorManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
-import commons.BaseTest;
-import commons.GlobalConstants;
-import commons.PageGeneratorManager;
 import pageObjects.admin.AdminDashboardPageObject;
 import pageObjects.admin.AdminLoginPageObject;
-import pageObjects.users.AddressesPageObject;
-import pageObjects.users.CustomerPageObject;
-import pageObjects.users.DownloadableProductPageObject;
-import pageObjects.users.HomePageObject;
-import pageObjects.users.LoginPageObject;
-import pageObjects.users.RegisterPageObject;
-import pageObjects.users.RewardPointsPageObject;
+import pageObjects.users.*;
+
+import java.util.Random;
+
+import static org.testng.Assert.assertEquals;
 
 public class Level_11_Global_Constants extends BaseTest {
 

@@ -1,22 +1,21 @@
 package com.nopcommerce.user;
 
-import static org.testng.Assert.assertEquals;
-
-import java.time.Duration;
-import java.util.Random;
-
+import commons.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import commons.BasePage;
 import pageObjects.users.CustomerPageObject;
 import pageObjects.users.HomePageObject;
 import pageObjects.users.LoginPageObject;
 import pageObjects.users.RegisterPageObject;
+
+import java.time.Duration;
+import java.util.Random;
+
+import static org.testng.Assert.assertEquals;
 
 public class Level_03_Page_Object_Pattern extends BasePage {
 

@@ -1,8 +1,7 @@
 package pageObjects.facebook;
 
-import org.openqa.selenium.WebDriver;
-
 import commons.BasePage;
+import org.openqa.selenium.WebDriver;
 import pageUIs.facebook.HomePageUI;
 
 public class HomePageObject extends BasePage {

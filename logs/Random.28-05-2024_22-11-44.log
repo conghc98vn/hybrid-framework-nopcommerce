@@ -1,0 +1,4 @@
+[28-05-2024 22:11:53.845 INFO com.nopcommerce.user.Level_26_Data_In_Internal] - --------------PASSED--------------
+[28-05-2024 22:11:55.861 INFO com.nopcommerce.user.Level_26_Data_In_Internal] - --------------PASSED--------------
+[28-05-2024 22:12:01.893 INFO com.nopcommerce.user.Level_26_Data_In_Internal] - OS name = mac os x
+[28-05-2024 22:12:01.895 INFO com.nopcommerce.user.Level_26_Data_In_Internal] - Driver instance name = firefoxdriver: firefox on mac (728ec227-5813-459e-a9ce-8f05b86751ae)

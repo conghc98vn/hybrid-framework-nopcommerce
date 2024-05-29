@@ -1,12 +1,11 @@
 package pageObject.jquery;
 
-import java.util.List;
-
+import commons.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import commons.BasePage;
 import pageUI.jquery.UploadPageUI;
+
+import java.util.List;
 
 public class UploadPageObject extends BasePage {
 	WebDriver driver;

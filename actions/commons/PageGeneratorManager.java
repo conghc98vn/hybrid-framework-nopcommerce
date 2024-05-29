@@ -12,6 +12,7 @@ import pageObjects.users.LoginPageObject;
 import pageObjects.users.OrdersPageObject;
 import pageObjects.users.RegisterPageObject;
 import pageObjects.users.RewardPointsPageObject;
+import pageObjects.users.SearchPageObject;
 
 public class PageGeneratorManager {
 
@@ -53,5 +54,9 @@ public class PageGeneratorManager {
 
 	public static OrdersPageObject getOrdersPage(WebDriver driver) {
 		return new OrdersPageObject(driver);
+	}
+
+	public static SearchPageObject getSearchPage(WebDriver driver) {
+		return new SearchPageObject(driver);
 	}
 }

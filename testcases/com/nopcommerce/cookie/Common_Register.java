@@ -1,18 +1,17 @@
 package com.nopcommerce.cookie;
 
-import java.util.Set;
-
+import commons.BaseTest;
+import commons.PageGeneratorManager;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
-
-import commons.BaseTest;
-import commons.PageGeneratorManager;
 import pageObjects.users.HomePageObject;
 import pageObjects.users.LoginPageObject;
 import pageObjects.users.RegisterPageObject;
+
+import java.util.Set;
 
 public class Common_Register extends BaseTest {
 

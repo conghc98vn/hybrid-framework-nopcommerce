@@ -1,7 +1,6 @@
 package pageObjects.users;
 
 import org.openqa.selenium.WebDriver;
-
 import pageUIs.users.CustomerPageUI;
 
 public class CustomerPageObject extends MyAccountSideBarPageObject {

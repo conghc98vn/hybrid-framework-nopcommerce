@@ -1,21 +1,20 @@
 package com.nopcommerce.user;
 
-import static org.testng.Assert.assertEquals;
-
-import java.util.Random;
-
+import commons.BaseTest;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
-import commons.BaseTest;
 import pageObjects.users.CustomerPageObject;
 import pageObjects.users.HomePageObject;
 import pageObjects.users.LoginPageObject;
 import pageObjects.users.RegisterPageObject;
+
+import java.util.Random;
+
+import static org.testng.Assert.assertEquals;
 
 public class Level_07_Page_Generator_01 extends BaseTest {
 

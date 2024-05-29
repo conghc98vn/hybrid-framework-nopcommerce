@@ -1,13 +1,12 @@
 package pageObject.jquery;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import commons.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import commons.BasePage;
 import pageUI.jquery.HomePageUI;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class HomePageObject extends BasePage {
 	WebDriver driver;

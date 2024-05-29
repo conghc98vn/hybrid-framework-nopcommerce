@@ -1,12 +1,11 @@
 package com.facebook.home;
 
+import commons.BaseTest;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
-import commons.BaseTest;
 import pageObjects.facebook.HomePageObject;
 import pageObjects.facebook.PageGeneratorManager;
 

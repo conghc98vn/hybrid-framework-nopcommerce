@@ -1,24 +1,22 @@
 package com.nopcommerce.user;
 
-import java.lang.reflect.Method;
-import java.util.Random;
-
+import com.aventstack.extentreports.Status;
+import commons.BaseTest;
+import commons.PageGeneratorManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
-import com.aventstack.extentreports.Status;
-
-import commons.BaseTest;
-import commons.PageGeneratorManager;
 import pageObjects.users.CustomerPageObject;
 import pageObjects.users.HomePageObject;
 import pageObjects.users.LoginPageObject;
 import pageObjects.users.RegisterPageObject;
 import reportConfig.ExtentTestManager;
+
+import java.lang.reflect.Method;
+import java.util.Random;
 
 public class Level_18_Extent_v5 extends BaseTest {
 

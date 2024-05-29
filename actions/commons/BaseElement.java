@@ -1,7 +1,6 @@
 package commons;
 
 import org.openqa.selenium.WebDriver;
-
 import pageObjects.users.HomePageObject;
 import pageUIs.users.BaseElementUI;
 

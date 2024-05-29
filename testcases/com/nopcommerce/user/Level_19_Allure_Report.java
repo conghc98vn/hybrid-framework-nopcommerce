@@ -1,26 +1,20 @@
 package com.nopcommerce.user;
 
-import java.util.Random;
-
+import commons.BaseTest;
+import commons.PageGeneratorManager;
+import io.qameta.allure.*;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
-import commons.BaseTest;
-import commons.PageGeneratorManager;
-import io.qameta.allure.Description;
-import io.qameta.allure.Epic;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
-import io.qameta.allure.Story;
 import pageObjects.users.CustomerPageObject;
 import pageObjects.users.HomePageObject;
 import pageObjects.users.LoginPageObject;
 import pageObjects.users.RegisterPageObject;
+
+import java.util.Random;
 
 @Epic("Account")
 @Feature("Create Account")

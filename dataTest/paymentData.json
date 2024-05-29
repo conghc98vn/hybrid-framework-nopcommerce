@@ -1,0 +1,14 @@
+{
+	"visa" : "123-4353-2342",
+	"date" : "12-12-2023",
+	"cvc" : ""107,
+	
+	"Checkout" :  {
+		"discount": "Sale30"
+	}
+	
+	"Login" : {
+		"username" : "Automation",
+		"password" : "123123"
+	}
+}
