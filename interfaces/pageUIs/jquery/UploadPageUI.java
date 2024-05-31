@@ -1,4 +1,4 @@
-package pageUI.jquery;
+package pageUIs.jquery;
 
 public class UploadPageUI {
 	public static final String FILE_LOADED_BY_NAME = "xpath=//p[@class='name' and text()='%s']";

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite parallel="none" name="Nop Commerce" thread-count="4">
+<suite parallel="none" name="SauceLab - Web Automation UI" thread-count="4">
 
 
 	<listeners>
 <!--		<listener class-name="commons.MethodListener" />>-->
 <!--		<listener class-name="reportConfig.AllureTestListener" />>-->
-	 </listeners>n
+	 </listeners>
 
-	<parameter name="server" value="testing" />
+<parameter name="url" value="https://www.saucedemo.com/"/>
 
 	<test name="Run on Firefox" preserve-order="true">
 		<parameter name="browser" value="Firefox" />
 		<classes> 
-			<class name="com.nopcommerce.user.Level_31_Environtment_01" />
+			<class name="com.saucelab.sort.Level_31_Sort_ASC_DESC" />
 		</classes>
 	</test>
 

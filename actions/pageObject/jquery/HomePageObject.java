@@ -1,9 +1,10 @@
 package pageObject.jquery;
 
 import commons.BasePage;
+import pageUIs.jquery.HomePageUI;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import pageUI.jquery.HomePageUI;
 
 import java.util.ArrayList;
 import java.util.List;

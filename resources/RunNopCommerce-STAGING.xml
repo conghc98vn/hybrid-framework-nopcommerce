@@ -8,7 +8,7 @@
 <!--		<listener class-name="reportConfig.AllureTestListener" />>-->
 	 </listeners>n
 
-	<parameter name="server" value="testing" />
+	<parameter name="url" value="https://staging.nopcommerce.com" />
 
 	<test name="Run on Firefox" preserve-order="true">
 		<parameter name="browser" value="Firefox" />

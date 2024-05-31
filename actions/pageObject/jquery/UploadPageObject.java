@@ -1,9 +1,10 @@
 package pageObject.jquery;
 
 import commons.BasePage;
+import pageUIs.jquery.UploadPageUI;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import pageUI.jquery.UploadPageUI;
 
 import java.util.List;
 

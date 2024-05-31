@@ -77,6 +77,51 @@ public class BaseTest extends BasePage {
 		return driver;
 	}
 
+	protected WebDriver getBrowserDriverEnvironment(String browserName, String serverName) {
+		BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
+
+		switch (browserList) {
+		case CHROME:
+			driver = new ChromeDriver();
+			break;
+
+		case FIREFOX:
+			driver = new FirefoxDriver();
+			break;
+
+		case EDGE:
+			driver = new EdgeDriver();
+
+		default:
+			throw new RuntimeException("Browser name is not valid");
+		}
+
+		driver.get(getUrlByServerName(serverName));
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalConstants.LONG_TIMEOUT));
+		return driver;
+	}
+
+	private String getUrlByServerName(String serverName) {
+		ServerList serverList = ServerList.valueOf(serverName.toUpperCase());
+
+		switch (serverList) {
+		case DEV:
+			serverName = "https://demo.nopcommerce.com";
+			break;
+		case TESTING:
+			serverName = "https://test.nopcommerce.com";
+			break;
+		case STAGING:
+			serverName = "https://staging.nopcommerce.com";
+			break;
+		default:
+			new IllegalArgumentException("Unexpected value: " + serverName);
+		}
+
+		return serverName;
+	}
+
 	protected boolean verifyTrue(boolean condition) {
 		boolean pass = true;
 		try {
