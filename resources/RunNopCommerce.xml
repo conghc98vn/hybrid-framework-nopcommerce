@@ -8,12 +8,12 @@
 <!--		<listener class-name="reportConfig.AllureTestListener" />>-->
 	 </listeners>n
 
-	<parameter name="server" value="testing" />
+	<parameter name="server" value="dev" />
 
 	<test name="Run on Firefox" preserve-order="true">
 		<parameter name="browser" value="Firefox" />
 		<classes> 
-			<class name="com.nopcommerce.user.Level_31_Environtment_01" />
+			<class name="com.nopcommerce.user.Level_31_Environtment_04_Owner" />
 		</classes>
 	</test>
 

@@ -1,7 +1,6 @@
 package com.nopcommerce.user;
 
 import java.lang.reflect.Method;
-import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
@@ -10,17 +9,19 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
+import utilities.PropertiesConfig;
 
-public class Level_31_Environtment_02 extends BaseTest {
+public class Level_31_Environtment_03_Java_Properties extends BaseTest {
 
 	WebDriver driver;
-	String projectPath = System.getProperty("user.dir");
-	Random random = new Random();
 
-	@Parameters({ "browser", "url" })
+	PropertiesConfig propertiesConfig;
+
+	@Parameters({ "browser", "server" })
 	@BeforeClass
-	public void beforeClass(String browserName, String url) {
-		driver = getBrowserDriver(browserName, url);
+	public void beforeClass(String browserName, String serverName) {
+		propertiesConfig = PropertiesConfig.getProperties(serverName);
+		driver = getBrowserDriver(browserName, propertiesConfig.getApplicationUrl());
 	}
 
 	@Test

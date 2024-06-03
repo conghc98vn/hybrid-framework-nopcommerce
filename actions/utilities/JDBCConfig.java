@@ -1,4 +1,4 @@
-package utitlities;
+package utilities;
 
 public class JDBCConfig {
 

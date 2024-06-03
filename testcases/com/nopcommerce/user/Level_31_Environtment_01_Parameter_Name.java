@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import commons.BaseTest;
 
-public class Level_31_Environtment_01 extends BaseTest {
+public class Level_31_Environtment_01_Parameter_Name extends BaseTest {
 
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");

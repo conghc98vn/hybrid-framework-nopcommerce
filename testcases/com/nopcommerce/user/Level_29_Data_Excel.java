@@ -21,7 +21,7 @@ import pageObjects.users.HomePageObject;
 import pageObjects.users.LoginPageObject;
 import pageObjects.users.RegisterPageObject;
 import reportConfig.ExtentTestManager;
-import utitlities.ExcelConfig;
+import utilities.ExcelConfig;
 
 public class Level_29_Data_Excel extends BaseTest {
 

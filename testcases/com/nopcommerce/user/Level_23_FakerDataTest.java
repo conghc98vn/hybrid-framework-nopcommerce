@@ -21,7 +21,7 @@ import pageObjects.users.HomePageObject;
 import pageObjects.users.LoginPageObject;
 import pageObjects.users.RegisterPageObject;
 import reportConfig.ExtentTestManager;
-import utitlities.FakerConfig;
+import utilities.FakerConfig;
 
 public class Level_23_FakerDataTest extends BaseTest {
 
